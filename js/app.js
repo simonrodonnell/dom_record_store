@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   newItemform.addEventListener('submit', handleNewItemFormSubmit);
 
   // deleteAllButton
-
+  const deleteAllButton = document.querySelector('#delete-all');
+  deleteAllButton.addEventListener('click', handleDeleteAllClick);
 })
 
 const handleNewItemFormSubmit = function (event) {
@@ -40,4 +41,10 @@ const createRecordStoreItem = function(form) {
 
   return recordStoreItem;
 
+}
+
+//delete all button
+const handleDeleteAllClick = function (event) {
+  const recordCatalogue = document.querySelector('#record-catalogue');
+  recordCatalogue.innerHTML = '';
 }

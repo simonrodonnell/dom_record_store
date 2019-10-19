@@ -39,6 +39,11 @@ const createRecordStoreItem = function(form) {
   genre.textContent = form.genre.value;
   recordStoreItem.appendChild(genre);
 
+  //create format info
+  const format = document.createElement('p');
+  format.textContent = form.format.value;
+  recordStoreItem.appendChild(format);
+
   return recordStoreItem;
 
 }

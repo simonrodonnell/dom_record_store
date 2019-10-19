@@ -1,47 +1,65 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Record Store Catalogue</title>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/app.js"></script>
-  </head>
-  <body>
-    <form id="new-item-form">
+<head>
+  <meta charset="utf-8">
+  <title>Record Store Catalogue</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <form id="new-item-form">
 
-      <!-- Artist -->
-      <label for="artist">Artist</label>
-      <input type="text" id="artist" required/>
+    <!-- Artist -->
+    <label for="artist">Artist</label>
+    <input type="text" id="artist" required/>
 
-      <!-- Album Name -->
-      <label for="album">Album</label>
-      <input type="text" id="album" required/>
+    <!-- Album Name -->
+    <label for="album">Album</label>
+    <input type="text" id="album" required/>
 
 
-      <!-- Genre -->
-      <label for="genre">Genre</label>
-      <select id="genre">
-        <option value="" disabled selected></option>
-        <option value="Classical">Classical</option>
-        <option value="Dance">Dance</option>
-        <option value="Folk">Folk</option>
-        <option value="Indie">Indie</option>
-        <option value="Jazz">Jazz</option>
-        <option value="Metal">Metal</option>
-        <option value="Rap">Rap</option>
-        <option value="Rock">Rock</option>
-        <option value="Soul">Soul</option>
-        <option value="World">World</option>
-      </select>
+    <!-- Genre -->
+    <label for="genre">Genre</label>
+    <select id="genre">
+      <option value="" disabled selected></option>
+      <option value="Classical">Classical</option>
+      <option value="Dance">Dance</option>
+      <option value="Folk">Folk</option>
+      <option value="Indie">Indie</option>
+      <option value="Jazz">Jazz</option>
+      <option value="Metal">Metal</option>
+      <option value="Pop">Pop</option>
+      <option value="Rap">Rap</option>
+      <option value="Rock">Rock</option>
+      <option value="Soul">Soul</option>
+      <option value="World">World</option>
+    </select>
 
-      <input type="submit" value="save"/>
+    <!-- format -->
+    <div id="format">
 
-    </form>
+      <p>Format:</p>
+      <input type="radio" id="cd" name="format" value="CD"
+      checked>
+      <label for="cd">CD</label>
 
-    <button id="delete-all">Delete All</button>
+      <input type="radio" id="vinyl" name="format" value="Vinyl">
+      <label for="vinyl">Vinyl</label>
 
-    <h1>Record Store Catalogue</h1>
-    <div id="record-catalogue"></div>
+      <input type="radio" id="mp3" name="format" value="MP3">
+      <label for="mp3">MP3</label>
 
-  </body>
+    </div>
+
+
+    <input type="submit" value="save"/>
+
+  </form>
+<hr>
+  <button id="delete-all">Delete All</button>
+<hr>
+  <h1>Record Store Catalogue</h1>
+  <div id="record-catalogue"></div>
+
+</body>
 </html>

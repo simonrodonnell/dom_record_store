@@ -2,3 +2,35 @@ body {
   font-family: "Helvetica Neue";
   background-color: #cccccc;
 }
+
+li {
+  list-style: none;
+}
+
+form {
+
+}
+
+.record-store-item {
+  width: 150px;
+  padding: 10px;
+  margin: 20px;
+  border: solid thin;
+  border-radius: 15px;
+  background-color: #bbbbbb;
+}
+
+#record-catalogue {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#new-item-form {
+  border: solid thin;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #bbbbbb;
+}

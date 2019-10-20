@@ -12,12 +12,23 @@ form {
 }
 
 .record-store-item {
+  text-align: center;
   width: 150px;
   padding: 10px;
   margin: 20px;
   border: solid thin;
   border-radius: 15px;
   background-color: #bbbbbb;
+}
+
+#catalogue-label {
+  text-align: center;
+}
+
+#delete-all {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #record-catalogue {

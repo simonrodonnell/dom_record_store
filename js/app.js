@@ -24,15 +24,30 @@ const createRecordStoreItem = function(form) {
   document.createElement('li');
   recordStoreItem.classList.add('record-store-item');
 
+  //create artist label
+  const artistLabel = document.createElement('p');
+  artistLabel.textContent = "Artist:"
+  recordStoreItem.appendChild(artistLabel);
+
   //create artist info
   const artist = document.createElement('h2');
   artist.textContent = form.artist.value;
   recordStoreItem.appendChild(artist);
 
+  //create album label
+  const albumLabel = document.createElement('p');
+  albumLabel.textContent = "Album:";
+  recordStoreItem.appendChild(albumLabel);
+
   //create album info
   const album = document.createElement('h3');
   album.textContent = form.album.value;
   recordStoreItem.appendChild(album);
+
+  //create genre label
+  const genreLabel = document.createElement('p');
+  genreLabel.textContent = "Genre:"
+  recordStoreItem.appendChild(genreLabel);
 
   //create genre info
   const genre = document.createElement('p');
